@@ -12,3 +12,15 @@ function destructivelyUpdateDriverWithKeyAndValue(driver, key, value){
    driver[key] = value;
    return driver; 
 }
+
+//* `deleteFromDriverByKey()` - this function should take in a `driver` object and a `key`. It should delete the `key`/`value` pair for the `key` that was passed in from the `driver` object. This should all not actually mutate the `driver` passed in.
+function deleteFromDriverByKey(driver, key) {
+  const newObj = driver.delete[key];
+  return newObj;
+}
+
+
+
+//* `destructivelyDeleteFromDriverByKey()` - this function should work the same as `deleteFromDriverByKey()` but it *should* mutate the `driver` passed in.
+
+
